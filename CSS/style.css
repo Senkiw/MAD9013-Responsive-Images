@@ -68,3 +68,26 @@ p{
   text-align: center;
   color: #fff;
 }
+
+/*Media Queries*/
+
+@media only screen and (max-width: 600px) {
+  
+.wrapper{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px){
+
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+
+
+}
