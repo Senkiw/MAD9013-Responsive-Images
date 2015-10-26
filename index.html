@@ -2,77 +2,271 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Responsive Images</title>
 
 <!-- Link to CSS / Media Queries --> 
-  <link rel="stylesheet" href="CSS/style.css">
-
+  <link rel="stylesheet" href="styles.css">
 </head>
-
-<div class="banner"></div>
-
 
 <div class="wrapper">
   
-  <section class="col-container clearfix">
-    <article class="feature-article">
-      <h1>Layout and Picture Elements</h1>
-      <p><strong>Task</strong>: Create a flexible grid that substitues different images at different breakpoints.</p>
-      <p><strong>Requirements</strong>:</p>
-      <hr>
-      <pre>
-
-// Layout Requirements
-
-The starting layout should be single column up to 600px wide.
-
-At 600px wide the layout should rearrange into two columns.
-
-At 1024px wide the layout should rearrange into it's final layout of three columns.
-
-If the screensize is larger than 1024px the layout should stay 1024px wide and stay centered.
-
-
-// Picture Requirements
-
-340px
-400px
-600px
-512px
-
-Up to 400px wide the picture src should be - http://placehold.it/400x400
-
-From 400px to 600px the picture src should be - http://placehold.it/600x600
-
-From 600px to 800px the picture src should be - http://placehold.it/400x400
-
-From 800px to 1020px the picture src should be - http://placehold.it/512x512
-
-At 1024px the picture scr should be -  http://placehold.it/340x340
-
-The Fallback should be 600px - http://placehold.it/600x600
-      </pre>
-    </article>
-  </section>
-
-
-<div class="wrapper">
-<picture>
-   <source media="(max-width: 600px)" srcset="http://placehold.it/600x600">
-   <source src="http://placehold.it/340x340">
-   <img src="http://placehold.it/340x340" alt="This picture loads on non-supporting browsers.">
+<div class="box">
+<picture class="innerContent">
+	<source media="(max-width:400px)" srcset="Images/400x400.jpg">
+    <source src="http://placehold.it/400x400">
+  
+	<source media="(min-width:400px) and (max-width:600px)" srcset="Images/600x600.jpg">
+    <source src="http://placehold.it/600x600">
+  
+	<source media="(min-width:600px) and (max-width:800px)" srcset="Images/400x400.jpg">
+    <source src="http://placehold.it/400x400">
+    
+	<source media="(min-width:800px) and (max-width: 1024px)" srcset="Images/512x512.jpg">
+    <source src="http://placehold.it/512x512">
+    
+    <source media="(min-width:1025px)" srcset="Images/340x340.jpg">
+    <source src="http://placehold.it/340x340">
+    <img src="http://placehold.it/600x600" alt="Non-supporting browser.">
+    <div class="titleBox"> Bill Murray </div>
 </picture>
+</div>
  
-<picture>
-   <source media="(max-width: 600px)" srcset="Images/340x340.jpg" style="width: 100%; height:auto;">
-   <source src="http://placehold.it/340x340">
-   <img src="http://placehold.it/340x340" alt="Small Bill Murray.">
+<div class="box">
+<picture class="innerContent">
+   	<source media="(max-width:400px)" srcset="Images/bw400x400.jpg">
+    <source src="http://placehold.it/400x400">
+  
+	<source media="(min-width:400px) and (max-width:600px)" srcset="Images/bw600x600.jpg">
+    <source src="http://placehold.it/600x600">
+  
+	<source media="(min-width:601px) and (max-width:800px)" srcset="Images/bw400x400.jpg">
+    <source src="http://placehold.it/400x400">
+    
+	<source media="(min-width:800px) and (max-width: 1024px)" srcset="Images/bw512x512.jpg">
+    <source src="http://placehold.it/512x512">
+    
+    <source media="(min-width:1025px)" srcset="Images/bw340x340.jpg">
+    <source src="http://placehold.it/340x340">
+    <img src="http://placehold.it/600x600" alt="Non-supporting browser.">
+    <div class="titleBox"> Bill Murray Again! </div>
 </picture>
+</div>
 
+<div class="box">
+<picture class="innerContent">
+	<source media="(max-width:400px)" srcset="Images/400x400.jpg">
+    <source src="http://placehold.it/400x400">
+  
+	<source media="(min-width:400px) and (max-width:600px)" srcset="Images/600x600.jpg">
+    <source src="http://placehold.it/600x600">
+  
+	<source media="(min-width:600px) and (max-width:800px)" srcset="Images/400x400.jpg">
+    <source src="http://placehold.it/400x400">
+    
+	<source media="(min-width:800px) and (max-width: 1024px)" srcset="Images/512x512.jpg">
+    <source src="http://placehold.it/512x512">
+    
+    <source media="(min-width:1025px)" srcset="Images/340x340.jpg">
+    <source src="http://placehold.it/340x340">
+    <img src="http://placehold.it/600x600" alt="Non-supporting browser.">
+    <div class="titleBox"> Bill Murray </div>
+</picture>
+</div>
+
+<div class="box">
+<picture class="innerContent">
+   	<source media="(max-width:400px)" srcset="Images/bw400x400.jpg">
+    <source src="http://placehold.it/400x400">
+  
+	<source media="(min-width:400px) and (max-width:600px)" srcset="Images/bw600x600.jpg">
+    <source src="http://placehold.it/600x600">
+  
+	<source media="(min-width:601px) and (max-width:800px)" srcset="Images/bw400x400.jpg">
+    <source src="http://placehold.it/400x400">
+    
+	<source media="(min-width:800px) and (max-width: 1024px)" srcset="Images/bw512x512.jpg">
+    <source src="http://placehold.it/512x512">
+    
+    <source media="(min-width:1025px)" srcset="Images/bw340x340.jpg">
+    <source src="http://placehold.it/340x340">
+    <img src="http://placehold.it/600x600" alt="Non-supporting browser.">
+    <div class="titleBox"> Bill Murray Again! </div>
+</picture>
+</div>
+
+<div class="box">
+<picture class="innerContent">
+	<source media="(max-width:400px)" srcset="Images/400x400.jpg">
+    <source src="http://placehold.it/400x400">
+  
+	<source media="(min-width:400px) and (max-width:600px)" srcset="Images/600x600.jpg">
+    <source src="http://placehold.it/600x600">
+  
+	<source media="(min-width:600px) and (max-width:800px)" srcset="Images/400x400.jpg">
+    <source src="http://placehold.it/400x400">
+    
+	<source media="(min-width:800px) and (max-width: 1024px)" srcset="Images/512x512.jpg">
+    <source src="http://placehold.it/512x512">
+    
+    <source media="(min-width:1025px)" srcset="Images/340x340.jpg">
+    <source src="http://placehold.it/340x340">
+    <img src="http://placehold.it/600x600" alt="Non-supporting browser.">
+    <div class="titleBox"> Bill Murray </div>
+</picture>
+</div>
+
+<div class="box">
+<picture class="innerContent">
+   	<source media="(max-width:400px)" srcset="Images/bw400x400.jpg">
+    <source src="http://placehold.it/400x400">
+  
+	<source media="(min-width:400px) and (max-width:600px)" srcset="Images/bw600x600.jpg">
+    <source src="http://placehold.it/600x600">
+  
+	<source media="(min-width:601px) and (max-width:800px)" srcset="Images/bw400x400.jpg">
+    <source src="http://placehold.it/400x400">
+    
+	<source media="(min-width:800px) and (max-width: 1024px)" srcset="Images/bw512x512.jpg">
+    <source src="http://placehold.it/512x512">
+    
+    <source media="(min-width:1025px)" srcset="Images/bw340x340.jpg">
+    <source src="http://placehold.it/340x340">
+    <img src="http://placehold.it/600x600" alt="Non-supporting browser.">
+    <div class="titleBox"> Bill Murray Again! </div>
+</picture>
+</div>
+
+<div class="box">
+<picture class="innerContent">
+	<source media="(max-width:400px)" srcset="Images/400x400.jpg">
+    <source src="http://placehold.it/400x400">
+  
+	<source media="(min-width:400px) and (max-width:600px)" srcset="Images/600x600.jpg">
+    <source src="http://placehold.it/600x600">
+  
+	<source media="(min-width:600px) and (max-width:800px)" srcset="Images/400x400.jpg">
+    <source src="http://placehold.it/400x400">
+    
+	<source media="(min-width:800px) and (max-width: 1024px)" srcset="Images/512x512.jpg">
+    <source src="http://placehold.it/512x512">
+    
+    <source media="(min-width:1025px)" srcset="Images/340x340.jpg">
+    <source src="http://placehold.it/340x340">
+    <img src="http://placehold.it/600x600" alt="Non-supporting browser.">
+    <div class="titleBox"> Bill Murray </div>
+</picture>
+</div>
+
+<div class="box">
+<picture class="innerContent">
+   	<source media="(max-width:400px)" srcset="Images/bw400x400.jpg">
+    <source src="http://placehold.it/400x400">
+  
+	<source media="(min-width:400px) and (max-width:600px)" srcset="Images/bw600x600.jpg">
+    <source src="http://placehold.it/600x600">
+  
+	<source media="(min-width:601px) and (max-width:800px)" srcset="Images/bw400x400.jpg">
+    <source src="http://placehold.it/400x400">
+    
+	<source media="(min-width:800px) and (max-width: 1024px)" srcset="Images/bw512x512.jpg">
+    <source src="http://placehold.it/512x512">
+    
+    <source media="(min-width:1025px)" srcset="Images/bw340x340.jpg">
+    <source src="http://placehold.it/340x340">
+    <img src="http://placehold.it/600x600" alt="Non-supporting browser.">
+    <div class="titleBox"> Bill Murray Again! </div>
+</picture>
+</div>
+
+<div class="box">
+<picture class="innerContent">
+	<source media="(max-width:400px)" srcset="Images/400x400.jpg">
+    <source src="http://placehold.it/400x400">
+  
+	<source media="(min-width:400px) and (max-width:600px)" srcset="Images/600x600.jpg">
+    <source src="http://placehold.it/600x600">
+  
+	<source media="(min-width:600px) and (max-width:800px)" srcset="Images/400x400.jpg">
+    <source src="http://placehold.it/400x400">
+    
+	<source media="(min-width:800px) and (max-width: 1024px)" srcset="Images/512x512.jpg">
+    <source src="http://placehold.it/512x512">
+    
+    <source media="(min-width:1025px)" srcset="Images/340x340.jpg">
+    <source src="http://placehold.it/340x340">
+    <img src="http://placehold.it/600x600" alt="Non-supporting browser.">
+    <div class="titleBox"> Bill Murray </div>
+</picture>
+</div>
+
+<div class="box">
+<picture class="innerContent">
+   	<source media="(max-width:400px)" srcset="Images/bw400x400.jpg">
+    <source src="http://placehold.it/400x400">
+  
+	<source media="(min-width:400px) and (max-width:600px)" srcset="Images/bw600x600.jpg">
+    <source src="http://placehold.it/600x600">
+  
+	<source media="(min-width:601px) and (max-width:800px)" srcset="Images/bw400x400.jpg">
+    <source src="http://placehold.it/400x400">
+    
+	<source media="(min-width:800px) and (max-width: 1024px)" srcset="Images/bw512x512.jpg">
+    <source src="http://placehold.it/512x512">
+    
+    <source media="(min-width:1025px)" srcset="Images/bw340x340.jpg">
+    <source src="http://placehold.it/340x340">
+    <img src="http://placehold.it/600x600" alt="Non-supporting browser.">
+    <div class="titleBox"> Bill Murray Again! </div>
+</picture>
+</div>
+
+<div class="box">
+<picture class="innerContent">
+	<source media="(max-width:400px)" srcset="Images/400x400.jpg">
+    <source src="http://placehold.it/400x400">
+  
+	<source media="(min-width:400px) and (max-width:600px)" srcset="Images/600x600.jpg">
+    <source src="http://placehold.it/600x600">
+  
+	<source media="(min-width:600px) and (max-width:800px)" srcset="Images/400x400.jpg">
+    <source src="http://placehold.it/400x400">
+    
+	<source media="(min-width:800px) and (max-width: 1024px)" srcset="Images/512x512.jpg">
+    <source src="http://placehold.it/512x512">
+    
+    <source media="(min-width:1025px)" srcset="Images/340x340.jpg">
+    <source src="http://placehold.it/340x340">
+    <img src="http://placehold.it/600x600" alt="Non-supporting browser.">
+    <div class="titleBox"> Bill Murray </div>
+</picture>
+</div>
+
+<div class="box">
+<picture class="innerContent">
+   	<source media="(max-width:400px)" srcset="Images/bw400x400.jpg">
+    <source src="http://placehold.it/400x400">
+  
+	<source media="(min-width:400px) and (max-width:600px)" srcset="Images/bw600x600.jpg">
+    <source src="http://placehold.it/600x600">
+  
+	<source media="(min-width:601px) and (max-width:800px)" srcset="Images/bw400x400.jpg">
+    <source src="http://placehold.it/400x400">
+    
+	<source media="(min-width:800px) and (max-width: 1024px)" srcset="Images/bw512x512.jpg">
+    <source src="http://placehold.it/512x512">
+    
+    <source media="(min-width:1025px)" srcset="Images/bw340x340.jpg">
+    <source src="http://placehold.it/340x340">
+    <img src="http://placehold.it/600x600" alt="Non-supporting browser.">
+    
+</picture>
+<div class="titleBox"> BILL </div>
+</div>
 
 </div>
 
 <footer class="footer">
-  <p>Copyright MySite 1954</p>
+  <p>Copyright rSenkiw 2015</p>
 </footer>
 </html>
